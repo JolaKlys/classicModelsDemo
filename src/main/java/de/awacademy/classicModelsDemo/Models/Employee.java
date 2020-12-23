@@ -93,6 +93,13 @@ public class Employee {
     public void setBoss(Employee boss) {
         this.boss = boss;
     }
+    public String getBossName (){
+        if (boss == null){
+            return " ";
+        }
+
+        return  boss.firstName + " " + boss.lastName;
+    }
 
     public String getJobTitle() {
         return jobTitle;
