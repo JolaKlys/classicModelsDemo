@@ -92,7 +92,10 @@ public class Office {
         return addressLine1;
     }
     public String getAddress() {
+        if (addressLine2 != null)
         return addressLine1+ " "+ addressLine2 +" "+postalCode +" "+ city +" "+ country+" "+ territory;
+        else
+            return addressLine1+ " "+ postalCode +" "+ city +" "+ country+" "+ territory;
     }
 
     public void setAddressLine1(String addressLine1) {

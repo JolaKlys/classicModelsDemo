@@ -32,7 +32,7 @@
             <th>State</th>
             <th>Country</th>
             <th>Postal Code</th>
-            <th>Territory</th> -->
+            <th>Territory</th>-->
             <th></th>
         </tr>
         <tr th:each="office: ${offices}">
@@ -45,7 +45,7 @@
             <td th:text="${office.state}"></td>
             <td th:text="${office.country}"></td>
             <td th:text="${office.postalCode}"></td>
-            <td th:text="${office.territory}"></td> -->
+            <td th:text="${office.territory}"></td>-->
 
             <td><a th:href="@{office(code=${office.officeCode})}" class="button is-primary">view</a></td>
         </tr>
