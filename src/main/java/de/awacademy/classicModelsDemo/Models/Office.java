@@ -91,6 +91,9 @@ public class Office {
     public String getAddressLine1() {
         return addressLine1;
     }
+    public String getAddress() {
+        return addressLine1+ " "+ addressLine2 +" "+postalCode +" "+ city +" "+ country+" "+ territory;
+    }
 
     public void setAddressLine1(String addressLine1) {
         this.addressLine1 = addressLine1;

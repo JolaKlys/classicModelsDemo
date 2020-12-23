@@ -18,6 +18,13 @@ public class Employee {
 
     private String email;
 
+
+//
+//    public String getFullName() {
+//        return firstName +" "+ lastName;
+//    }
+
+
     @ManyToOne
     @JoinColumn(name = "officeCode", referencedColumnName = "officeCode")
     private Office office;
