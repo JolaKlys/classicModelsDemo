@@ -55,8 +55,9 @@ public class MainController {
         String officeCode = request.getParameter("code");
         Office office = officeService.getOfficeById(officeCode);
 
-        List<Employee> employeeList = employeeService.getAllEmployees();
+      //  List<Employee> employeeList = employeeService.getAllEmployees();
 
+         List<Employee> employeeList = office.getEmployeeList();
 
         // Instead of letting Hibernate pick the file automatically by returning a string
         // We can create a ModelAndView of the page and return it
