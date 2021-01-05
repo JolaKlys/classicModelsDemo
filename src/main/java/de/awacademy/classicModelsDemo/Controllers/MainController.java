@@ -24,6 +24,7 @@ public class MainController {
 
     @Autowired
     private EmployeeService employeeService;
+    private Office employees;
 
 
     // Example to show that everything still works, even when we don't use a DB connection
@@ -70,4 +71,14 @@ public class MainController {
         return model;
     }
 
+
+    @GetMapping("/employee")
+    public String employee(HttpServletRequest request, Model model) {
+
+        List<Employee> employeeList = employeeService.getAllEmployees();
+
+        model.addAttribute("employees", employeeList);
+
+        return "employees";
+    }
 }
